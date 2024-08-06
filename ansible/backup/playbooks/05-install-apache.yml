@@ -1,10 +1,9 @@
----
 - hosts: dev
   become: true
   tasks:
-    - yum:
-        name:
-          - httpd
-        state: present
-    - service: name=httpd state=started enabled=yes
-    - raw: "echo Welcome to in28minutes | sudo tee /var/www/html/index.html"
+  - yum:
+      name:
+      - httpd
+      state: present
+  - service: name=httpd state=started enabled=yes
+  - raw: "echo Welcome to ebsung test! | sudo tee /var/www/html/index.html"
