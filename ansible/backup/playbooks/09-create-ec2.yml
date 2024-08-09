@@ -3,7 +3,7 @@
   - ec2_instance:
       key_name: default-ec2-pem
       instance_type: t2.micro
-      image_id: ami-04e0d5ae95859f31d
+      image_id: ami-0c2acfcb2ac4d02a0
       region: ap-northeast-2
       #count: 1
       exact_count: 2
