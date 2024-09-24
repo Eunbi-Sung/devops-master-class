@@ -4,7 +4,6 @@
     color: "Red"
   tasks:
   - debug: var=ansible_system
-    #    - debug: var=hostvars
   - debug: var=color
     when: system == 'Linux'
   - debug: var=item
